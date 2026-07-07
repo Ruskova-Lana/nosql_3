@@ -258,7 +258,9 @@ MATCH ()-[r:RATED]->() RETURN count(r) AS ratings;
 
 Шлях довжини 4 означає, що користувачі пов’язані через одного проміжного користувача або через два фільми.
 
+```text
 (User 1)-[:RATED]->(Movie A)<-[:RATED]-(User X)-[:RATED]->(Movie B)<-[:RATED]-(User 2)
+```
 
 Це означає, що User 1 має спільний фільм з User X, а User X має спільний фільм з User 2.
 
@@ -268,7 +270,9 @@ MATCH ()-[r:RATED]->() RETURN count(r) AS ratings;
 
 Шлях довжини 6 означає ще більш опосередкований зв’язок між користувачами:
 
+```text
 (User 1)-[:RATED]->(Movie A)<-[:RATED]-(User X)-[:RATED]->(Movie B)<-[:RATED]-(User Y)-[:RATED]->(Movie C)<-[:RATED]-(User 2)
+```
 
 Тут між двома користувачами є вже два проміжні користувачі та кілька фільмів.
 
