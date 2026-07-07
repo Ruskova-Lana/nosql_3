@@ -27,7 +27,6 @@
 - gender
 - age
 - occupation
-- zipCode
 
 (Movie)
 - movieId
